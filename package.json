@@ -1,15 +1,18 @@
 {
   "name": "c-common",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "files": ["lib"], 
+  "description": "封装了常用的组件库,如表格及弹窗等",
+  "license": "MIT",
+  "main": "lib/all/c-common.umd.min.js", 
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name c-common --dest lib/all src/components/index.js"  
   },
   "dependencies": {
-    "core-js": "^3.8.3",
-    "vue": "^2.6.14"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -19,7 +22,11 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.6.14"
+    "vue-template-compiler": "^2.6.14",
+    "less": "^3.13.1",
+    "less-loader": "^4.1.0",
+    "core-js": "^3.8.3",
+    "vue": "^2.6.14"
   },
   "eslintConfig": {
     "root": true,

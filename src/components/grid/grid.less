@@ -1,0 +1,68 @@
+@import "../less/var.less";
+.M-grid{
+    &Table{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20px;
+        &.fixedPager {
+            padding-bottom: 70px;
+        }
+        &.radioTable thead .el-checkbox {
+            display: none;
+        }
+
+        &.radioTable thead .el-checkbox {
+            display: none;
+        }
+
+        // 鼠标悬停背景颜色
+        .el-table__body tr:hover > td{
+            background-color:#F0FDFD !important;
+        }
+
+        .el-table__row{
+            td.handleTypeTextStyle{
+                .cell{
+
+                    div{
+                        text-decoration:underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    &Pager{
+        padding: 10px 0;
+        background: #fff;
+    }
+    &Table.fixedPager {
+        .M-gridPager {
+            padding: 10px 30px;
+            position: fixed;
+            z-index: 10;
+            bottom: 0;
+            left: 170px;
+            right: 0;
+            box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.07);
+        }
+    }
+    .el-table .warning-row {
+        background: #F5F5F5;
+    }
+    .name-wrapper{
+        .el-tag--medium{
+            .single_line_ellipsis;
+            width: 100%;
+        }
+    }
+
+    .el-popover__reference{
+        display: flex;
+    }
+    .radioEnable{
+        .el-checkbox__input.is-disabled .el-checkbox__inner{
+            background-color: #FFF !important;
+        }
+    }
+}
